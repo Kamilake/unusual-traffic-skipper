@@ -1,0 +1,18 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']   # v0.2.0 같은 태그가 푸시될 때만 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint JS
+        uses: xojs/action@v2         # eslint 대용
+      - name: Upload user script as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: redirect-skipper
+          path: redirect-skipper.user.js
