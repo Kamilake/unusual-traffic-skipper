@@ -14,5 +14,5 @@ jobs:
       - name: Upload user script as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: redirect-skipper
-          path: redirect-skipper.user.js
+          name: unusual-traffic-skipper
+          path: unusual-traffic-skipper.user.js
