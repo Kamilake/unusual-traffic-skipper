@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         unusual-traffic-skipper
 // @namespace    https://github.com/Kamilake/unusual-traffic-skipper
-// @version      0.2.0
+// @version      0.1.0
 // @description  Skip Google's unsual traffic detection redirect wrapper
-// @match        https://www.example.com/redirect/index*
+// @match        https://www.google.com/sorry/index*
 // @run-at       document-start
 // @license      MIT
 // @downloadURL  https://raw.githubusercontent.com/Kamilake/unusual-traffic-skipper/main/unusual-traffic-skipper.user.js
